@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MainRectangulo {
+    public static void main(String[] args) {
+        List<Rectángulo> rectángulos = new ArrayList<>();
+        rectángulos.add(new Rectángulo(3, 4));
+        rectángulos.add(new Rectángulo(2, 6));
+        rectángulos.add(new Rectángulo(5, 3));
+        rectángulos.add(new Rectángulo(1, 8));
+        rectángulos.add(new Rectángulo(4, 5));
+        rectángulos.add(new Rectángulo(6, 2));
+        rectángulos.add(new Rectángulo(7, 1));
+        rectángulos.add(new Rectángulo(8, 1));
+        rectángulos.add(new Rectángulo(2, 7));
+        rectángulos.add(new Rectángulo(9, 1));
+
+        Collections.sort(rectángulos);
+
+        for (Rectángulo rectángulo : rectángulos) {
+            System.out.println(rectángulo);
+        }
+    }
+}
